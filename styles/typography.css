@@ -1,0 +1,84 @@
+/*版式*/
+body {
+  /*因为浏览器默认字体大小是16px,这里改成16 x 62.5% = 10px;*/
+  /*font-size: 62.5%;*/
+  /*font-family 可以把多个字体名称作为一个“回退”系统来保存。*/
+  /*如果浏览器不支持第一个字体，则会尝试下一个。*/
+  font-family: "Helvetica","Arial",sans-serif;
+}
+body * {
+  font-size: 1em;
+}
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+header nav {
+  font-family: "Lucida Grande","Helvetica","Arial",sans-serif;
+}
+header nav a {
+  font-weight: bold;
+  text-decoration: none;
+}
+article {
+  line-height: 2em;
+}
+article p {
+  margin: 1em 0;
+}
+h1 {
+  font-family: "Georgia","Times New Roman",sans-serif;
+  /*normal指的是字体样式，2.4em指的是字体大小*/
+  font: 2.4em normal;
+}
+h2 {
+  font-family: "Georgia","Times New Roman",sans-serif;
+  font: 1.8em normal;
+  margin-top: 1em;
+}
+h3 {
+  font-family: "Georgia","Times New Roman",sans-serif;
+  font: 1.4em normal;
+  margin-top: 1em;
+}
+dt {
+  margin-right: 1em;
+}
+dd {
+  margin-right: 3em;
+}
+tr.highlight td {
+  /*font-weight: bold;*/
+}
+#imagegallery li {
+/*设置列表样式，比如默认是实心圆，还有空心圆，实心方块，数字等*/
+  list-style-type: none;
+}
+textarea {
+  font-family: "Helvetica","Arial",sans-serif;
+}
+#slideshow {
+  width: 150px;
+  height: 150px;
+  /*生成相对定位的元素，相对于其正常位置进行定位。
+  因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。所以本项目中的
+  图片就可以左右移动了*/
+  position: relative;
+  overflow: hidden;
+}
+#preview {
+  /*生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。*/
+  position: absolute;
+  border-width: 0;
+  /*outline（轮廓）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。
+  outline 属性设置元素周围的轮廓线。*/
+  outline-width: 0;
+}
+#frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素
+  的前面。数值越大就是离用户越近。*/
+  z-index: 99;
+}

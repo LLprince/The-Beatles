@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>The Beatles</title>
+   <script src="scripts/modernizr.js"></script>
+   <link rel="stylesheet" media="screen" href="styles/basic.css">
+</head>
+
+<body>
+   <header> <img src="images/logo.gif" alt="The Beatles">
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="live.html">Live</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+   <article>
+    <h1>Contact the band</h1>
+    <form action="submit.html" method="post">
+      <fieldset>
+        <p>
+          <label for="name">Name:</label>
+          <!-- required 属性规定必需在提交之前填写输入字段。是 HTML5 中的新属性 -->
+          <input type="text" id="name" name="name" placeholder="Your name" required="required">
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your email address" required="required">
+        </p>
+        <p>
+          <label for="message">Message:</label>
+          <textarea name="massage" rows="7" cols="45" id="message" placeholder="Write your message here" required="required"></textarea>
+        </p>
+        <input type="submit" value="Send">
+      </fieldset>
+    </form>
+   </article>
+   <script src="scripts/global.js"></script>
+</body>
+
+</html>

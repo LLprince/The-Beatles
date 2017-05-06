@@ -1,0 +1,100 @@
+/*布局*/
+section,header,article,nav {
+  display: block;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 1em 10%;
+  background-image: url(../images/background.gif);
+  /*background-attachment 属性设置背景图像是否固定或者随着页面的其余部分滚动。默认值是scroll
+  fixed属性：当页面的其余部分滚动时，背景图像不会移动。*/
+  background-attachment: fixed;
+  /*background-position 属性设置背景图像的起始位置。*/
+  background-position: top left;
+  /*background-repeat 属性设置是否及如何重复背景图像。默认地，背景图像在水平和垂直方向上重复。*/
+  background-repeat: repeat-x;
+  /*max-width 定义元素的最大宽度。*/
+  max-width: 80em;
+}
+header {
+  background-image: url(../images/guitarist.gif);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  border-width: .1em;
+  border-style: solid;
+  border-bottom-width: 0;
+}
+header nav {
+  background-image: url();
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  border-width: .1em;
+  border-style: solid;
+  border-bottom-width: 0;
+  border-top-width: 0;
+  padding-left: 10%;
+}
+header nav ul {
+  width: 100%;
+  overflow: hidden;;
+  border-left-width: .1em;
+  border-left-style: solid;
+}
+header nav li {
+  display: inline;
+}
+header nav li a {
+  display: block;
+  float: left;
+  padding: .5em 4em;
+  border-right: .1em solid;
+}
+article {
+  border-width: .1em;
+  border-style: solid;
+  border-top-width: 0;
+  padding: 2em 10%;
+  line-height: 1.8em;
+}
+article img {
+  border-style: solid;
+  border-width: .1em;
+  outline-style: solid;
+  outline-width: .1em;
+}
+td {
+  padding: .5em 3em;
+}
+dl {
+  overflow: hidden;
+}
+dt {
+  float: left;
+}
+dd {
+  float: left;
+}
+label {
+  display: block;
+}
+fieldset {
+  border: 0;
+}
+#about header {
+  background-image: url(../images/lineup.gif);
+}
+#photos header {
+  background-image: url(../images/basshead.gif);
+}
+#live header {
+  background-image: url(../images/bassist.gif);
+}
+#contact header {
+  background-image: url(../images/drummer.gif);
+}
+#imagegallery li {
+  display: inline;
+}

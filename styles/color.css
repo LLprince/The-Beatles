@@ -1,0 +1,89 @@
+/*不管为哪个元素应用什么颜色，都要同时给它一个背景颜色。*/
+body {
+  color: #fb5;
+  background-color: #334;
+}
+/*未访问的链接*/
+a:link {
+  color: #445;
+  background-color: #eb6;
+}
+/*已访问的链接*/
+a:visited {
+  color: #345;
+  background-color: #eb6;
+}
+/*鼠标在链接上*/
+a:hover {
+  color: #667;
+  background-color: #fb5;
+}
+/*点击链接时*/
+a:active {
+  color: #778;
+  background-color: #ec8;
+}
+header {
+  color: #ec8;
+  background-color: #334;
+  border-color: #667;
+}
+header nav {
+  color: #445;
+  background-color: #789;
+  border-color: #667;
+}
+header nav ul {
+  border-color: #99a;
+}
+header nav a:link,header nav a:visited {
+  color: #eef;
+  background-color: transparent;
+  border-color: #99a;
+}
+header nav a:hover {
+  color: #445;
+  background-color: #eb6;
+}
+header nav a:active {
+  color: #667;
+  background-color: #ec8;
+}
+header nav a.here:link,
+header nav a.here:visited,
+header nav a.here:hover,
+header nav a.here:active {
+  color: #eef;
+  background-color: #799;
+}
+article {
+  color: #223;
+  background-color: #edc;
+  border-color: #667;
+}
+article img {
+  border-color: #ba9;
+  outline-color: #dcb;
+}
+thead {
+  color: #edc;
+  background-color: #455;
+}
+tbody tr td {
+  color: #223;
+  background-color: #eb6;
+}
+tr.odd td {
+  color: #223;
+  background-color: #ec8;
+}
+tr.highlight td {
+  color: #223;
+  background-color: #cba;
+}
+input.placeholder {
+  color: grey;
+}
+#imagegallery a {
+  background-color: transparent;
+}
